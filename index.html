@@ -2,27 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Alaskan Ariel</title>
+  <title>Thank You For Exploring Alaska!</title>
   <style>
-    body { font-family: sans-serif; padding: 20px; }
-    nav a { margin-right: 20px; }
-    .photo-gallery img { width: 200px; margin: 10px; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5b/Denali_Mt_McKinley.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      color: #ffdd57;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .photo-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .photo-gallery img {
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
   </style>
 </head>
 <body>
-  <h1>Thank you for Exploring Alaska!</h1>
+  <div class="overlay">
+    <h1>Thank You For Exploring Alaska!</h1>
 
-  <nav>
+    <nav>
     <a href="https://www.tripadvisor.com/UserReviewEdit-g31020-d1763972-Gastineau_Guiding-Juneau_Alaska.html" target="_blank">Trip Advisor</a>
     <a href="https://www.yelp.com/writeareview/biz/ChUnL__3yA4Tizbp740vCQ?return_url=%2Fbiz%2FChUnL__3yA4Tizbp740vCQ&review_origin=biz-details-war-button" target="_blank">Yelp</a>
     <a href="https://www.stepintoalaska.com/2025-capture-juneau-photo-contest/" target="_blank">Photo Contest</a>
   </nav>
 
-  <h2>Photo Gallery</h2>
-  <div class="photo-gallery">
-    <img src="https://via.placeholder.com/200" alt="Photo 1">
-    <img src="https://via.placeholder.com/200" alt="Photo 2">
-    <!-- Add more photos as needed -->
+    <h2>Photo Gallery</h2>
+<div class="photo-gallery">
+  <img src="images1/83A0ADD8-E2D7-4727-817C-CE1F17555CD0.jpeg" alt="Photo 1">
+  <img src="images1/IMG_0921.jpeg" alt="Photo 2">
+  <img src="images1/IMG_3275.jpeg" alt="Photo 3">
+  <img src="images1/IMG_3395.jpeg" alt="Photo 4">
+  <img src="images1/IMG_5364.jpeg" alt="Photo 5">
+  <img src="images1/IMG_8750.jpeg" alt="Photo 6">
+  <img src="images1/IMG_8750.jpeg" alt="Photo 7">
+</div>
+
+    <footer>
+      &copy; 2025 AlaskanAriel. All rights reserved.
+    </footer>
   </div>
 </body>
 </html>
