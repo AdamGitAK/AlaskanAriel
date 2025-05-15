@@ -7,55 +7,92 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-image: url=('https://raw.githubusercontent.com/AdamGitAK/AlaskanAriel/main/Images1/IMG_9086.jpeg');
+      background-image: url('https://raw.githubusercontent.com/AdamGitAK/AlaskanAriel/main/Images1/IMG_9086.jpeg');
       background-size: cover;
       background-position: center;
-      color: white;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+      background-attachment: fixed;
+      color: #f4f9f9;
     }
 
     .overlay {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 30, 45, 0.7); /* dark glacier blue */
       min-height: 100vh;
-      padding: 40px;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     h1 {
       font-size: 3em;
-      margin-bottom: 10px;
+      color: #fefefe;
+      text-shadow: 1px 2px 4px rgba(0,0,0,0.6);
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     nav {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     nav a {
-      color: #ffdd57;
+      color: #c2fbd7; /* soft green */
+      background: rgba(255,255,255,0.1);
+      padding: 10px 16px;
+      border-radius: 6px;
       text-decoration: none;
-      margin-right: 20px;
+      margin: 0 10px;
       font-weight: bold;
+      transition: background 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background: rgba(255,255,255,0.3);
+    }
+
+    h2 {
+      font-size: 2em;
+      margin: 30px 0 20px;
+      border-bottom: 2px solid #88c9bf;
+      padding-bottom: 10px;
     }
 
     .photo-gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 15px;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
     }
 
     .photo-gallery img {
-      width: 200px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+      width: 240px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-gallery img:hover {
+      transform: scale(1.05);
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 60px;
       font-size: 0.9em;
-      color: #ccc;
+      color: #aacccc;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .photo-gallery img {
+        width: 90%;
+      }
+      nav a {
+        display: block;
+        margin: 10px auto;
+        width: fit-content;
+      }
     }
   </style>
 </head>
@@ -64,21 +101,21 @@
     <h1>Thank You For Exploring Alaska!</h1>
 
     <nav>
-    <a href="https://www.tripadvisor.com/UserReviewEdit-g31020-d1763972-Gastineau_Guiding-Juneau_Alaska.html" target="_blank">Trip Advisor</a>
-    <a href="https://www.yelp.com/writeareview/biz/ChUnL__3yA4Tizbp740vCQ?return_url=%2Fbiz%2FChUnL__3yA4Tizbp740vCQ&review_origin=biz-details-war-button" target="_blank">Yelp</a>
-    <a href="https://www.stepintoalaska.com/2025-capture-juneau-photo-contest/" target="_blank">Photo Contest</a>
-  </nav>
+      <a href="https://www.tripadvisor.com/UserReviewEdit-g31020-d1763972-Gastineau_Guiding-Juneau_Alaska.html" target="_blank">Trip Advisor</a>
+      <a href="https://www.yelp.com/writeareview/biz/ChUnL__3yA4Tizbp740vCQ?return_url=%2Fbiz%2FChUnL__3yA4Tizbp740vCQ&review_origin=biz-details-war-button" target="_blank">Yelp</a>
+      <a href="https://www.stepintoalaska.com/2025-capture-juneau-photo-contest/" target="_blank">Photo Contest</a>
+    </nav>
 
     <h2>Photo Gallery</h2>
-<div class="photo-gallery">
-  <img src="Images1/83A0ADD8-E2D7-4727-817C-CE1F17555CD0.jpeg" alt="Photo 1">
-  <img src="Images1/IMG_0921.jpeg" alt="Photo 2">
-  <img src="Images1/IMG_3275.jpeg" alt="Photo 3">
-  <img src="Images1/IMG_3395.jpeg" alt="Photo 4">
-  <img src="Images1/IMG_5364.jpeg" alt="Photo 5">
-  <img src="Images1/IMG_8750.jpeg" alt="Photo 6">
-  <img src="Images1/IMG_8750.jpeg" alt="Photo 7">
-</div>
+    <div class="photo-gallery">
+      <img src="Images1/83A0ADD8-E2D7-4727-817C-CE1F17555CD0.jpeg" alt="Photo 1">
+      <img src="Images1/IMG_0921.jpeg" alt="Photo 2">
+      <img src="Images1/IMG_3275.jpeg" alt="Photo 3">
+      <img src="Images1/IMG_3395.jpeg" alt="Photo 4">
+      <img src="Images1/IMG_5364.jpeg" alt="Photo 5">
+      <img src="Images1/IMG_8750.jpeg" alt="Photo 6">
+      <img src="Images1/IMG_8750.jpeg" alt="Photo 7">
+    </div>
 
     <footer>
       &copy; 2025 AlaskanAriel. All rights reserved.
