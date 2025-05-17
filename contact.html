@@ -119,21 +119,77 @@
       <a href="https://www.alaskanariel.com" target="_blank">Home</a>
     </nav>
 
-<form
-  action="https://formspree.io/f/mrbqjyqy"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+<!-- Comment Form Section -->
+<section class="comment-section">
+  <h2>Leave a Comment</h2>
+  <form action="https://formspree.io/f/mrbqjyqy" method="POST">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="e.g. Jane Doe" required>
+
+    <label for="message">Your Comment</label>
+    <textarea id="message" name="message" rows="5" placeholder="Type your thoughts here..." required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<style>
+  .comment-section {
+    background: rgba(0, 30, 45, 0.8);
+    padding: 40px;
+    max-width: 600px;
+    margin: 60px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    color: #f4f9f9;
+  }
+
+  .comment-section h2 {
+    text-align: center;
+    color: #c2fbd7;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #88c9bf;
+    padding-bottom: 10px;
+  }
+
+  .comment-section label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #fefefe;
+  }
+
+  .comment-section input,
+  .comment-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.95);
+    font-size: 1em;
+    color: #003c3c;
+  }
+
+  .comment-section button {
+    background-color: #c2fbd7;
+    color: #002d2d;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .comment-section button:hover {
+    background-color: #9ee7be;
+  }
+</style>
+
 
     <footer>
       &copy; 2025 AlaskanAriel. All rights reserved. Designed by Adam
