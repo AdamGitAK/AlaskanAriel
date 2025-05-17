@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You For Exploring Alaska!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://raw.githubusercontent.com/AdamGitAK/AlaskanAriel/main/Images1/IMG_9086.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #f4f9f9;
+    }
+
+    .overlay {
+      background: rgba(0, 30, 45, 0.7); /* dark glacier blue */
+      min-height: 100vh;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #fefefe;
+      text-shadow: 1px 2px 4px rgba(0,0,0,0.6);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-bottom: 40px;
+    }
+
+    nav a {
+      color: #c2fbd7; /* soft green */
+      background: rgba(255,255,255,0.1);
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.3);
+    }
+
+    h2 {
+      font-size: 2em;
+      margin: 30px 0 20px;
+      border-bottom: 2px solid #88c9bf;
+      padding-bottom: 10px;
+    }
+
+    .photo-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+    }
+
+    .photo-gallery img {
+      width: 240px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #aacccc;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  nav a {
+    display: block;
+    margin: 0;
+    width: 90%;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1em;
+  }
+
+  .photo-gallery img {
+    width: 90%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>My email is</h1>
+    <h1>contacting [.] ariel [@] gmail [.] com</h1>
+    
+    <nav>
+      <a href="https://www.linkedin.com/in/ariel-hasse-zamudio-67752974/" target="_blank">Connect on Linkedin</a>
+      <a href="https://www.instagram.com/hasse_zamudio" target="_blank">Follow me on Instagram</a>
+      <a href="https://www.alaskanariel.com" target="_blank">Home</a>
+    </nav>
+
+    <footer>
+      &copy; 2025 AlaskanAriel. All rights reserved. Designed by Adam
+    </footer>
+  </div>
+</body>
+</html>
